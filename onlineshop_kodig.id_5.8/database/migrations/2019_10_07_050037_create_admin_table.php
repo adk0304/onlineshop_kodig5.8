@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateAdminAttTable extends Migration
+class CreateAdminTable extends Migration
 {
     /**
      * Run the migrations.
@@ -33,6 +33,6 @@ class CreateAdminAttTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('admin_att');
+        Schema::dropIfExists('admin');
     }
 }
