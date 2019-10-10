@@ -10,11 +10,11 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', function () {
+Route::get('/a', function () {
     return view('welcome');
 });
 
-Route::get('/a', function () {
+Route::get('/', function () {
     return view('pages.home');
 });
 
@@ -50,5 +50,6 @@ Route::get('/invoice', function(){
     return view('pages.invoice');
 });
 
-Route::get('/galery','galerycontroller@index');
+//Route::get('/galery','galerycontroller@index');
 
+Route::get('/promo','promo@getData');
