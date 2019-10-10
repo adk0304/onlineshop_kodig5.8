@@ -52,5 +52,6 @@ Route::get('/invoice', function(){
 
 //Route::get('/galery','galerycontroller@index');
 
-Route::get('/getpromo','promo@getData');
-Route::post('/postpromo','promo@postData');
+Route::get('/promo','promoController@index');
+Route::post('/promo/create','promoController@create');
+Route::get('/promo/{id_promo}/edit','promoController@edit');
