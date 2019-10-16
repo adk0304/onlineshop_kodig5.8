@@ -9,9 +9,7 @@
 	<div class="container">
 		<div class="card">
 			<div class="card-body">
-
-
-				<h2 class="text-center"><a href="https://www.malasngoding.com">www.malasngoding.com</a></h2>
+				<h2 class="text-center">PROMO</a></h2>
                 <a href="/promo/tambah"> Tambah</a>
 				<h3>Data Pegawai</h3>
 

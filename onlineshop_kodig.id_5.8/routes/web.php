@@ -73,3 +73,28 @@ Route::get('produk_att/edit/{id}','ProdukAttController@edit');
 Route::post('produk_att/update','ProdukAttController@update');
 Route::get('produk_att/hapus/{id}','ProdukAttController@hapus');
 Route::get('produk_att/cari','ProdukAttController@cari');
+//PRODUK
+Route::get('produk', 'ProdukController@index');
+Route::get('produk/tambah','ProdukController@tambah');
+Route::post('produk/simpan', 'ProdukController@simpan');
+Route::get('produk/edit/{id}','ProdukController@edit');
+Route::post('produk/update','ProdukController@update');
+Route::get('produk/hapus/{id}','ProdukController@hapus');
+Route::get('produk/cari','ProdukController@cari');
+//DETAIL TRANSAKSI
+Route::get('dtransaksi', 'DTransaksiController@index');
+Route::get('dtransaksi/tambah','DTransaksiController@tambah');
+Route::post('dtransaksi/simpan', 'DTransaksiController@simpan');
+Route::get('dtransaksi/edit/{id}','DTransaksiController@edit');
+Route::post('dtransaksi/update','DTransaksiController@update');
+Route::get('dtransaksi/hapus/{id}','DTransaksiController@hapus');
+Route::get('dtransaksi/cari','DTransaksiController@cari');
+//TRANSAKSI
+Route::get('transaksi', 'TransasksiController@index');
+Route::get('transaksi/tambah','TransasksiController@tambah');
+Route::post('transaksi/simpan', 'TransasksiController@simpan');
+Route::get('transaksi/edit/{id}','TransasksiController@edit');
+Route::post('transaksi/update','TransasksiController@update');
+Route::get('transaksi/hapus/{id}','TransasksiController@hapus');
+Route::get('transaksi/cari','TransasksiController@cari');
+

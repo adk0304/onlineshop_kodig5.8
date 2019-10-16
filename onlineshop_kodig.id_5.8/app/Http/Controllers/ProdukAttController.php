@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 
 class ProdukAttController extends Controller
@@ -61,6 +61,4 @@ class ProdukAttController extends Controller
 		return view('CRUD/prproduk_att/index',['produk_att' => $produk_att]);
 
 	}
-
-
 }
