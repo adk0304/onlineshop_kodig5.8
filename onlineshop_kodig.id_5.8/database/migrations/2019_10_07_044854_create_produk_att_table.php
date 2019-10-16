@@ -19,8 +19,11 @@ class CreateProdukAttTable extends Migration
             $table->string('warna_produk');
             $table->integer('jumlah_produk');
             $table->integer('stock_produk');
-            $table->integer('size_produk');
+            $table->text('size_produk');
             $table->integer('harga_produk');
+            $table->integer('id_promo');
+            $table->integer('id_galery');
+            $table->integer('id_produk');
             $table->timestamps();
         });
     }

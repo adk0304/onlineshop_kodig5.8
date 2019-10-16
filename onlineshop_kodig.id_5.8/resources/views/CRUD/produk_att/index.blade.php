@@ -35,6 +35,8 @@
                         <th>harga produk</th>
                         <th>id promo</th>
                         <th>id galery</th>
+                        <th>id Produk</th>
+                        <th>aksi</th>
 					</tr>
 					@foreach($produk_att as $p)
 					<tr>
@@ -45,7 +47,8 @@
 						<td>{{ $p->size_produk }}</td>
 						<td>{{ $p->harga_produk }}</td>
                         <td>{{ $p->id_promo }}</td>
-						<td>{{ $p->id_galery }}</td>
+                        <td>{{ $p->id_galery }}</td>
+                        <td>{{ $p->id_produk }}</td>
 						<td>
 							<a class="btn btn-warning btn-sm" href="/produk_att/edit/{{ $p->id_produk_att }}">Edit</a>
 							<a class="btn btn-danger btn-sm" href="/produk_att/hapus/{{ $p->id_produk_att }}">Hapus</a>

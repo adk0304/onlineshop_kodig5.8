@@ -30,13 +30,15 @@
 						<th>nama testi</th>
 						<th>testimoni</th>
                         <th>rating</th>
+                        <th>ID Produk</th>
                         <th>Opsi</th>
 					</tr>
 					@foreach($testimoni as $p)
 					<tr>
 						<td>{{ $p->nama_testi }}</td>
 						<td>{{ $p->testimoni }}</td>
-						<td>{{ $p->rating }}</td>
+                        <td>{{ $p->rating }}</td>
+                        <td>{{$p->id_produk}}</td>
 						<td>
 							<a class="btn btn-warning btn-sm" href="/testimoni/edit/{{ $p->id_testi }}">Edit</a>
 							<a class="btn btn-danger btn-sm" href="/testimoni/hapus/{{ $p->id_testi }}">Hapus</a>

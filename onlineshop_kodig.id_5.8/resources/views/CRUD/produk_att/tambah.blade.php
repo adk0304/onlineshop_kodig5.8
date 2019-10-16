@@ -29,6 +29,7 @@
         Harga Produk<input type="number" required="required" name="harga_produk"> <br/>
 		ID Promo <input type="number" required="required" name="id_promo"> <br/>
 		ID Galery<input type="number" required="required" name="id_galery"> <br/>
+		ID Produk<input type="number" required="required" name="id_produk"> <br/>
 		<input type="submit" value="Simpan Data">
 		</form>
 

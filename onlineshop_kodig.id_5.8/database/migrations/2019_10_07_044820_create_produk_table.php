@@ -17,7 +17,6 @@ class CreateProdukTable extends Migration
             $table->bigIncrements('id_produk');
             $table->string('nama_produk');
             $table->string('jenis_produk');
-            $table->text('testimoni_produk');
             $table->timestamps();
         });
     }

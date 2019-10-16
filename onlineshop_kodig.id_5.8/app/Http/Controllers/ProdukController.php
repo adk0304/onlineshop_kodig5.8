@@ -17,9 +17,7 @@ class ProdukController extends Controller
     public function simpan(Request $request){
         DB::table('produk')->insert([
             'nama_produk'=>$request->nama_produk,
-            'jenis_produk'=>$request->jenis_produk,
-            'id_produk_att'=>$request->id_produk_att,
-            'id_testi'=>$request->id_testi
+            'jenis_produk'=>$request->jenis_produk
         ]);
         return redirect('/produk');
     }
@@ -30,9 +28,7 @@ class ProdukController extends Controller
     public function update(Request $request){
         DB::table('produk')->where('id_produk',$request->id)->update([
             'nama_produk'=>$request->nama_produk,
-            'jenis_produk'=>$request->jenis_produk,
-            'id_produk_att'=>$request->id_produk_att,
-            'id_testi'=>$request->id_testi
+            'jenis_produk'=>$request->jenis_produk
         ]);
         return redirect('/produk');
     }

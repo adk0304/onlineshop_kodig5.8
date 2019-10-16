@@ -17,7 +17,8 @@ class TestimoniController extends Controller
         DB::table('testimoni')->insert([
             'nama_testi'=>$request->nama_testi,
             'testimoni'=>$request->testimoni,
-            'rating'=>$request->rating
+            'rating'=>$request->rating,
+            'id_produk'=>$request->id_produk
         ]);
         return redirect('/testimoni');
     }
@@ -29,7 +30,8 @@ class TestimoniController extends Controller
         DB::table('testimoni')->where('id_testi',$request->id)->update([
             'nama_testi'=>$request->nama_testi,
             'testimoni'=>$request->testimoni,
-            'rating'=>$request->rating
+            'rating'=>$request->rating,
+            'id_produk'=>$request->id_produk
         ]);
         return redirect('/testimoni');
     }

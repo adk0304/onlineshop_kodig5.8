@@ -32,7 +32,7 @@
                         <th>ID Detail</th>
                         <th>Aksi</th>
 					</tr>
-					@foreach($detail_transaksi as $p)
+					@foreach($transaksi as $p)
 					<tr>
 						<td>{{ $p->nomor_transaksi }}</td>
 						<td>{{ $p->total_harga }}</td>

@@ -90,11 +90,11 @@ Route::post('dtransaksi/update','DTransaksiController@update');
 Route::get('dtransaksi/hapus/{id}','DTransaksiController@hapus');
 Route::get('dtransaksi/cari','DTransaksiController@cari');
 //TRANSAKSI
-Route::get('transaksi', 'TransasksiController@index');
-Route::get('transaksi/tambah','TransasksiController@tambah');
-Route::post('transaksi/simpan', 'TransasksiController@simpan');
-Route::get('transaksi/edit/{id}','TransasksiController@edit');
-Route::post('transaksi/update','TransasksiController@update');
-Route::get('transaksi/hapus/{id}','TransasksiController@hapus');
-Route::get('transaksi/cari','TransasksiController@cari');
+Route::get('transaksi', 'TransaksiController@index');
+Route::get('transaksi/tambah','TransaksiController@tambah');
+Route::post('transaksi/simpan', 'TransaksiController@simpan');
+Route::get('transaksi/edit/{id}','TransaksiController@edit');
+Route::post('transaksi/update','TransaksiController@update');
+Route::get('transaksi/hapus/{id}','TransaksiController@hapus');
+Route::get('transaksi/cari','TransaksiController@cari');
 

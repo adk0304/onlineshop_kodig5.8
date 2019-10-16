@@ -30,16 +30,13 @@
 				<table class="table table-bordered">
 					<tr>
 						<th>Nama Produk</th>
-						<th>Jenis produk</th>
-						<th>id produk att</th>
-                        <th>id testi</th>
+                        <th>Jenis produk</th>
+                        <th>Aksi</th>
 					</tr>
 					@foreach($produk as $p)
 					<tr>
 						<td>{{ $p->nama_produk }}</td>
 						<td>{{ $p->jenis_produk }}</td>
-						<td>{{ $p->id_produk_att }}</td>
-                        <td>{{ $p->id_testi }}</td>
 						<td>
 							<a class="btn btn-warning btn-sm" href="/produk/edit/{{ $p->id_produk }}">Edit</a>
 							<a class="btn btn-danger btn-sm" href="/produk/hapus/{{ $p->id_produk }}">Hapus</a>

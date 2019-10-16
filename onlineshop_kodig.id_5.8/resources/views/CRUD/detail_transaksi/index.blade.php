@@ -34,7 +34,8 @@
                         <th>tanggal transaksi</th>
                         <th>poin transaksi</th>
                         <th>Invoice</th>
-                        <th>id produk</th>
+                        <th>id transaksi</th>
+                        <th>id produk att</th>
                         <th>Aksi</th>
 					</tr>
 					@foreach($detail_transaksi as $p)
@@ -46,7 +47,8 @@
 						<td>{{ $p->tanggal_transaksi }}</td>
 						<td>{{ $p->poin_transaksi }}</td>
                         <td>{{ $p->invoice }}</td>
-						<td>{{ $p->id_produk }}</td>
+						<td>{{ $p->id_transaksi }}</td>
+						<td>{{ $p->id_produk_att }}</td>
 						<td>
 							<a class="btn btn-warning btn-sm" href="/dtransaksi/edit/{{ $p->id_detail }}">Edit</a>
 							<a class="btn btn-danger btn-sm" href="/dtransaksi/hapus/{{ $p->id_detail }}">Hapus</a>

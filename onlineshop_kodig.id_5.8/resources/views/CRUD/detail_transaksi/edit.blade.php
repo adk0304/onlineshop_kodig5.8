@@ -24,7 +24,8 @@
         tanggal transaksi<input type="date" required="required" name="tanggal_transaksi" value="{{ $p->tanggal_transaksi }}"> <br/>
         poin transaksi<input type="number" required="required" name="poin_transaksi" value="{{ $p->poin_transaksi }}"> <br/>
         Invoice<input type="text" required="required" name="invoice" value="{{ $p->invoice }}"> <br/>
-        id produk<input type="number" required="required" name="id_produk" value="{{ $p->id_produk }}"> <br/>
+        id Transaksi<input type="number" required="required" name="id_transaksi" value="{{ $p->id_transaksi }}"> <br/>
+        id produk att<input type="number" required="required" name="id_produk_att" value="{{ $p->id_produk_att }}"> <br/>
         <input type="submit" value="Simpan Data">
 	</form>
 	@endforeach

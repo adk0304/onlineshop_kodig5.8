@@ -22,7 +22,9 @@ class ProdukAttController extends Controller
             'size_produk'=>$request->size_produk,
             'harga_produk'=>$request->harga_produk,
             'id_galery'=>$request->id_galery,
-            'id_promo'=>$request->id_promo
+            'id_promo'=>$request->id_promo,
+            'id_produk'=>$request->id_produk
+
         ]);
         return redirect('/produk_att');
     }
@@ -39,7 +41,8 @@ class ProdukAttController extends Controller
             'size_produk'=>$request->size_produk,
             'harga_produk'=>$request->harga_produk,
             'id_galery'=>$request->id_galery,
-            'id_promo'=>$request->id_promo
+            'id_promo'=>$request->id_promo,
+            'id_produk'=>$request->id_produk
         ]);
         return redirect('/produk_att');
     }

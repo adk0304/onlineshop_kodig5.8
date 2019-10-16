@@ -23,7 +23,8 @@
         tanggal transaksi<input type="date" required="required" name="tanggal_transaksi" > <br/>
         poin transaksi<input type="number" required="required" name="poin_transaksi"> <br/>
         Invoice<input type="text" required="required" name="invoice" > <br/>
-        id produk<input type="number" required="required" name="id_produk" > <br/>
+        id transaksi<input type="number" required="required" name="id_transaksi" > <br/>
+        id produk att<input type="number" required="required" name="id_produk_att" > <br/>
         <input type="submit" value="Simpan Data">
 		</form>
 

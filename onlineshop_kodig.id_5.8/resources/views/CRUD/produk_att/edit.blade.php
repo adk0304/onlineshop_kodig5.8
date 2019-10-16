@@ -30,6 +30,7 @@
         Harga Produk<input type="number" required="required" name="harga_produk" value="{{ $p->harga_produk }}"> <br/>
 		ID Promo <input type="number" required="required" name="id_promo" value="{{ $p->id_promo }}"> <br/>
 		ID Galery<input type="number" required="required" name="id_galery" value="{{ $p->id_galery }}"> <br/>
+		ID Produk<input type="number" required="required" name="id_produk" value="{{ $p->id_produk }}"> <br/>
 		<input type="submit" value="Simpan Data">
 	</form>
 	@endforeach

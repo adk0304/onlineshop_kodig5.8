@@ -16,15 +16,16 @@ class DTransaksiController extends Controller
     public function simpan(Request $request){
         DB::table('detail_transaksi')->insert([
             'nama_barang'=>$request->nama_barang,
-            'satuan_barang'=>$request->stock_produk,
-            'sub_harga'=>$request->size_produk,
+            'satuan_barang'=>$request->satuan_barang,
+            'sub_harga'=>$request->sub_harga,
             'alamat_kirim'=>$request->alamat_kirim,
             'tanggal_transaksi'=>$request->tanggal_transaksi,
             'poin_transaksi'=>$request->poin_transaksi,
-            'invoice'=>$request->harga_produk,
-            'id_produk'=>$request->id_produk
+            'invoice'=>$request->invoice,
+            'id_transaksi'=>$request->id_transaksi,
+            'id_produk_att'=>$request->id_produk_att
         ]);
-        return redirect('/detail_transaksi');
+        return redirect('/dtransaksi');
     }
     public function edit($id){
         $detail_transaksi=DB::table('detail_transaksi')->where('id_detail',$id)->get();
@@ -32,21 +33,22 @@ class DTransaksiController extends Controller
     }
     public function update(Request $request){
         DB::table('detail_transaksi')->where('id_detail',$request->id)->update([
+            'nama_barang'=>$request->nama_barang,
+            'satuan_barang'=>$request->satuan_barang,
+            'sub_harga'=>$request->sub_harga,
             'alamat_kirim'=>$request->alamat_kirim,
             'tanggal_transaksi'=>$request->tanggal_transaksi,
             'poin_transaksi'=>$request->poin_transaksi,
-            'nama_barang'=>$request->nama_barang,
-            'satuan_barang'=>$request->stock_produk,
-            'sub_harga'=>$request->size_produk,
-            'invoice'=>$request->harga_produk,
-            'id_produk'=>$request->id_produk
+            'invoice'=>$request->invoice,
+            'id_transaksi'=>$request->id_transaksi,
+            'id_produk_att'=>$request->id_produk_att
         ]);
-        return redirect('/detail_transaksi');
+        return redirect('/dtransaksi');
     }
     public function hapus($id)
     {
         DB::table('detail_transaksi')->where('id_detail',$id)->delete();
-        return redirect('/detail_transaksi');
+        return redirect('/dtransaksi');
     }
     public function cari(Request $request)
     {

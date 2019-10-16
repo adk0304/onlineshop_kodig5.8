@@ -19,7 +19,8 @@
 		<input type="hidden" name="id" value="{{ $p->id_testi }}"> <br/>
         Nama testi<input type="text" required="required" name="nama_testi" value="{{ $p->nama_testi }}"> <br/>
         Testimoni<input type="text" required="required" name="testimoni" value="{{ $p->testimoni }}"> <br/>
-		rating<input type="number" required="required" name="rating" value="{{ $p->rating }}"> <br/>
+        rating<input type="number" required="required" name="rating" value="{{ $p->rating }}"> <br/>
+        id Produk<input type="number" required="required" name="id_produk" value="{{ $p->id_produk }}"> <br/>
 		<input type="submit" value="Simpan Data">
 	</form>
 	@endforeach
