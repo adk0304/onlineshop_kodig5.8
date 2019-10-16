@@ -37,7 +37,7 @@
                         <th>id produk</th>
                         <th>Aksi</th>
 					</tr>
-					@foreach($dtransaksi as $p)
+					@foreach($detail_transaksi as $p)
 					<tr>
 						<td>{{ $p->nama_barang }}</td>
 						<td>{{ $p->satuan_barang }}</td>
@@ -56,12 +56,12 @@
 				</table>
 
 				<br/>
-				Halaman : {{ $produk_att->currentPage() }} <br/>
-				Jumlah Data : {{ $produk_att->total() }} <br/>
-				Data Per Halaman : {{ $produk_att->perPage() }} <br/>
+				Halaman : {{ $detail_transaksi->currentPage() }} <br/>
+				Jumlah Data : {{ $detail_transaksi->total() }} <br/>
+				Data Per Halaman : {{ $detail_transaksi->perPage() }} <br/>
 				<br/>
 
-				{{ $produk_att->links() }}
+				{{ $detail_transaksi->links() }}
 			</div>
 		</div>
 	</div>

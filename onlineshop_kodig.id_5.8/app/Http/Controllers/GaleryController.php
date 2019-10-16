@@ -8,7 +8,7 @@ class GaleryController extends Controller
 {
     public function index(){
         $galery=DB::table('galery')->paginate(10);
-        return view('CRUD/galery/index',['galery'=>$galey]);
+        return view('CRUD/galery/index',['galery'=>$galery]);
     }
     public function tambah(){
         return view('CRUD/galery/tambah');

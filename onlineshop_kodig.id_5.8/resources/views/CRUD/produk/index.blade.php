@@ -18,24 +18,6 @@
 				<div class="form-group">
 
 				</div>
-                <form action="/<!DOCTYPE html>
-<html>
-<head>
-	<title>PRODUK </title>
-	<link rel="stylesheet" type="text/css" href="{{ asset('/css/app.css') }}">
-</head>
-<body>
-
-	<div class="container">
-		<div class="card">
-			<div class="card-body">
-				<h2 class="text-center">PRODUK </a></h2>
-				<a href="produk/tambah"> Tambah</a>
-				<h3>Data Pegawai</h3>
-
-				<p>Cari Data Pegawai :</p>
-
-				<div class="form-group">
 
 				</div>
                 <form action="/produk/cari" method="GET" class="form-inline">
